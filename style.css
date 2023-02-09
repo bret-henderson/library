@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+
+body {
+  background-color: #e2e8f0;
+  }
+
+header {
+  background-color: white;
+  font-size: 2rem;
+  padding: 32px 16px;
+  box-shadow: 0 4px 2px -2px rgb(0 0 0 / 15%);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 400px));
+  gap: 32px;
+  padding: 0px 16px;
+}
+
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 400px;
+  justify-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 32px 0px;
+  }
+
+button {
+  padding: 8px 64px;
+}
+
+.main-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 304px));
+  padding: 32px 64px;
+}
+
+.main-header > .add-book {
+  /* margin: 0 16px; */
+}
+
+main {
+  max-width: 1140px;
+}
+
+.popup {
+  backdrop-filter: blur(4px);
+}
