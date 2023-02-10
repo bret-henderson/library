@@ -45,14 +45,72 @@ button {
   padding: 32px 64px;
 }
 
-.main-header > .add-book {
-  /* margin: 0 16px; */
-}
-
 main {
   max-width: 1140px;
+  margin-bottom: 32px;
 }
 
-.popup {
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
+}
+
+.popup-container > form {
+  position: relative;
+  padding: 32px 16px 8px;
+  margin: 128px 32px 0px 32px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: white;
+  width: 100%;
+  max-width: 512px;
+  height:fit-content;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-row input {
+  flex: auto;
+  text-align: left;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.form-row label {
+  text-align: right;
+  width: 80px;
+  font-size: .9rem;
+  padding-right: 16px;
+}
+
+.checkbox-container {
+  display: flex;
+  
+}
+
+.form-row button {
+  margin-left: 80px;
+}
+
+.close-popup {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
 }
