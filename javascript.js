@@ -6,14 +6,16 @@ const popup = document.querySelector('.popup-container');
 
 const newBookForm = document.querySelector('.new-book-form');
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  let readStr = '';
-  if (read === true) readStr = 'Read';
-  else readStr = 'Not Read';
-  this.isRead = readStr;
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    let readStr = '';
+    if (read === true) readStr = 'Read';
+    else readStr = 'Not Read';
+    this.isRead = readStr;
+  }
 }
 
 function addBookToLibrary(newBook) {
